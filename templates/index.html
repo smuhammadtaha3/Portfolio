@@ -1,0 +1,192 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>
+                Aoa,<br />I'm
+                <span class="highlight">Syed Muhammad Taha</span>
+            </h1>
+            <h2>Machine Learning Engineer | Python Developer</h2>
+            <a href="#projects" class="btn btn-primary hero-btn"
+                >View Projects</a
+            >
+            <a href="#contact" class="btn btn-primary hero-btn">Contact Me</a>
+        </div>
+        <div class="hero-image">
+            <img
+                src="{{ url_for('static', filename='images/Portfolio-removebg-preview.png') }}"
+                alt="Taha"
+            />
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5" id="about">
+    <div class="container-fluid px-0">
+        <div class="row align-items-center">
+            <!-- About Word Box -->
+            <div class="col-md-4">
+                <div class="about-word-box">About</div>
+            </div>
+            <!-- Info Box -->
+            <div class="col-md-8">
+                <div class="about-info-box">
+                    Driven AI/ML enthusiast skilled in Python and core ML
+                    algorithms.<br />
+                    Quick learner with hands-on project experience and a passion
+                    for real-world problem-solving.<br />
+                    Currently diving into deep learning and NLP — ready to grow
+                    and contribute to impactful AI work.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="py-5" id="projects">
+    <div class="container-fluid px-0">
+        <div class="row align-items-start">
+            <!-- Projects Word Box -->
+            <div class="col-md-4">
+                <div class="about-word-box">Projects</div>
+            </div>
+            <!-- Projects Info Box -->
+            <div class="col-md-8">
+                <div class="about-info-box">
+                    <div class="project-list">
+                        <!-- Project 1 -->
+                        <div class="project-box">
+                            <div class="project-title">
+                                1. Hotel Reviews System
+                            </div>
+                            <div class="project-detail">
+                                <h5 class="card-title">
+                                    ML-based sentiment analysis
+                                </h5>
+                                <p class="card-text">
+                                    Developed a machine learning-based hotel
+                                    review prediction system that analyzes
+                                    customer feedback and predicts sentiment
+                                    (positive/negative) using NLP techniques.
+                                    <br /><strong>Libraries:</strong> Pandas,
+                                    Numpy, Matplotlib, Seaborn, Scikit-learn
+                                </p>
+                                <p>
+                                    <strong>Tech:</strong> Python, VS Code,
+                                    Jupyter Notebook
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-box">
+                            <div class="project-title">
+                                2. Hospital Management System, Odoo
+                            </div>
+                            <div class="project-detail">
+                                <h5 class="card-title">
+                                    Hospital Management System
+                                </h5>
+                                <p class="card-text">
+                                    Developed forms, lists, reports, and custom
+                                    Patient card with automated emails on record
+                                    creation and updates. Applied dynamic
+                                    rendering.
+                                </p>
+                                <p><strong>Tech:</strong> Python, Odoo</p>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-box">
+                            <div class="project-title">
+                                3. Travels Management System, Odoo
+                            </div>
+                            <div class="project-detail">
+                                <h5 class="card-title">
+                                    Travels Management System
+                                </h5>
+                                <p class="card-text">
+                                    Developed forms, lists, reports, and custom
+                                    tour card with automated emails on booking
+                                    creation and updates.
+                                </p>
+                                <p><strong>Tech:</strong> Python, Odoo</p>
+                            </div>
+                        </div>
+                        <!-- Project 4 -->
+                        <div class="project-box">
+                            <div class="project-title">4. MS-Paint, C</div>
+                            <div class="project-detail">
+                                <h5 class="card-title">MS Paint Clone</h5>
+                                <p class="card-text">
+                                    Created graphical MS Paint clone in C with
+                                    shape drawing, image movement via arrow
+                                    keys, and color changes.
+                                </p>
+                                <p><strong>Tech:</strong> C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .project-list -->
+                </div>
+                <!-- .about-info-box -->
+            </div>
+            <!-- .col-md-8 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+</section>
+
+<!-- Skills Section -->
+<section class="py-5" id="skills">
+    <div class="container" data-aos="fade-right">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, C, C++</li>
+            <li>
+                Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, TensorFlow,
+                PyTorch, OpenCV, NLTK
+            </li>
+            <li>Odoo Development</li>
+            <li>Tools: VS Code, Jupyter Notebook, Git, Apollo.io</li>
+            <li>
+                Soft Skills: Leadership, Critical Thinking, Negotiation,
+                Creativity, Research
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="bg-dark text-light py-5" id="contact">
+    <div class="container" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Email: smt771871@gmail.com</p>
+        <p>Phone: 0322-3648132</p>
+        <p>
+            LinkedIn:
+            <a
+                href="https://www.linkedin.com/in/m-taha-549760351/"
+                class="text-light"
+                >Profile</a
+            >
+        </p>
+        <p>
+            GitHub:
+            <a href="https://github.com/smuhammadtaha3" class="text-light"
+                >smuhammadtaha3</a
+            >
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary text-center text-light py-3">
+    &copy; 2025 Syed Muhammad Taha. Let’s build AI solutions together.
+</footer>
+
+{% endblock %}
